@@ -1,0 +1,14 @@
+This is a plugin to log mysql connections and disconnections of SOME users (blacklist or whitelist, it's up to you).
+It can also log every (successful or not) query typed for those users.
+
+Typical usage: track human activities on the database without polluting log or degrading performance for non-human users.
+
+How can it distinguish humans from non-humans? You should put in a file a list of human users OR a list of non-human users. See example.conf (to be appended in my.cnf)
+
+It requires MySQL or MariaDB (tested on MariaDB) at least v5.5 because it's an AUDIT plugin. (http://dev.mysql.com/doc/refman/5.5/en/audit-plugins.html)
+
+Use at your own risk.
+
+License: LGPL.
+
+Feedback welcome, patches even more welcome.
